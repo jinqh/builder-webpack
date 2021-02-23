@@ -8,7 +8,7 @@ describe('webpack.base.js test case', () => {
     console.log(baseConfig)
 
     it('entry', () => {
-        assert.strictEqual(baseConfig.entry.index, 'E:/test/builder-webpack/test/smoke/template/src/index/index.js')
-        assert.strictEqual(baseConfig.entry.search, 'E:/test/builder-webpack/test/smoke/template/src/search/index.js')
+        assert.strictEqual(baseConfig.entry.index.indexOf('/builder-webpack/test/smoke/template/src/index/index.js'), true)
+        assert.strictEqual(baseConfig.entry.search.indexOf('/builder-webpack/test/smoke/template/src/search/index.js'), true)
     })
 })
